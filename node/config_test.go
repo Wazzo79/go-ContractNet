@@ -72,15 +72,15 @@ func TestIPCPathResolution(t *testing.T) {
 	}{
 		{"", "", false, ""},
 		{"data", "", false, ""},
-		{"", "gubiq.ipc", false, filepath.Join(os.TempDir(), "gubiq.ipc")},
-		{"data", "gubiq.ipc", false, "data/gubiq.ipc"},
-		{"data", "./gubiq.ipc", false, "./gubiq.ipc"},
-		{"data", "/gubiq.ipc", false, "/gubiq.ipc"},
+		{"", "gContractNet.ipc", false, filepath.Join(os.TempDir(), "gContractNet.ipc")},
+		{"data", "gContractNet.ipc", false, "data/gContractNet.ipc"},
+		{"data", "./gContractNet.ipc", false, "./gContractNet.ipc"},
+		{"data", "/gContractNet.ipc", false, "/gContractNet.ipc"},
 		{"", "", true, ``},
 		{"data", "", true, ``},
-		{"", "gubiq.ipc", true, `\\.\pipe\gubiq.ipc`},
-		{"data", "gubiq.ipc", true, `\\.\pipe\gubiq.ipc`},
-		{"data", `\\.\pipe\gubiq.ipc`, true, `\\.\pipe\gubiq.ipc`},
+		{"", "gContractNet.ipc", true, `\\.\pipe\gContractNet.ipc`},
+		{"data", "gContractNet.ipc", true, `\\.\pipe\gContractNet.ipc`},
+		{"data", `\\.\pipe\gContractNet.ipc`, true, `\\.\pipe\gContractNet.ipc`},
 	}
 	for i, test := range tests {
 		// Only run when platform/test match

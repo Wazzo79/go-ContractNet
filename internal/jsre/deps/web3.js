@@ -1779,7 +1779,7 @@ var ETH_UNITS = [
     'ether',
     'grand',
     'Mether',
-    'Gubiqer',
+    'GContractNeter',
     'Tether',
     'Pether',
     'Eether',

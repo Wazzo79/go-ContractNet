@@ -16,7 +16,7 @@
 
 // +build android
 
-package gubiq
+package gContractNet
 
 // clientIdentifier is a hard coded identifier to report into the network.
-var clientIdentifier = "GubiqDroid"
+var clientIdentifier = "GContractNetDroid"

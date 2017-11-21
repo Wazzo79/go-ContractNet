@@ -16,7 +16,7 @@
 
 // Contains a wrapper for the Ethereum client.
 
-package gubiq
+package gContractNet
 
 import (
 	"math/big"

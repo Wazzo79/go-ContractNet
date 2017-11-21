@@ -16,7 +16,7 @@
 
 // Contains all the wrappers from the common package.
 
-package gubiq
+package gContractNet
 
 import (
 	"encoding/hex"

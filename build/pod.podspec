@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-  spec.name         = 'Gubiq'
+  spec.name         = 'GContractNet'
   spec.version      = '{{.Version}}'
   spec.license      = { :type => 'GNU Lesser General Public License, Version 3.0' }
   spec.homepage     = 'https://github.com/ubiq/go-ubiq'
@@ -11,12 +11,12 @@ Pod::Spec.new do |spec|
 
 	spec.platform = :ios
   spec.ios.deployment_target  = '9.0'
-	spec.ios.vendored_frameworks = 'Frameworks/Gubiq.framework'
+	spec.ios.vendored_frameworks = 'Frameworks/GContractNet.framework'
 
 	spec.prepare_command = <<-CMD
-    curl https://gubiqstore.blob.core.windows.net/builds/{{.Archive}}.tar.gz | tar -xvz
+    curl https://gContractNetstore.blob.core.windows.net/builds/{{.Archive}}.tar.gz | tar -xvz
     mkdir Frameworks
-    mv {{.Archive}}/Gubiq.framework Frameworks
+    mv {{.Archive}}/GContractNet.framework Frameworks
     rm -rf {{.Archive}}
   CMD
 end

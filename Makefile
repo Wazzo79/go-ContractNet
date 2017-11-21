@@ -2,19 +2,19 @@
 # with Go source code. If you know what GOPATH is then you probably
 # don't need to bother with make.
 
-.PHONY: gubiq android ios gubiq-cross evm all test clean
-.PHONY: gubiq-linux gubiq-linux-386 gubiq-linux-amd64 gubiq-linux-mips64 gubiq-linux-mips64le
-.PHONY: gubiq-linux-arm gubiq-linux-arm-5 gubiq-linux-arm-6 gubiq-linux-arm-7 gubiq-linux-arm64
-.PHONY: gubiq-darwin gubiq-darwin-386 gubiq-darwin-amd64
-.PHONY: gubiq-windows gubiq-windows-386 gubiq-windows-amd64
+.PHONY: gContractNet android ios gContractNet-cross evm all test clean
+.PHONY: gContractNet-linux gContractNet-linux-386 gContractNet-linux-amd64 gContractNet-linux-mips64 gContractNet-linux-mips64le
+.PHONY: gContractNet-linux-arm gContractNet-linux-arm-5 gContractNet-linux-arm-6 gContractNet-linux-arm-7 gContractNet-linux-arm64
+.PHONY: gContractNet-darwin gContractNet-darwin-386 gContractNet-darwin-amd64
+.PHONY: gContractNet-windows gContractNet-windows-386 gContractNet-windows-amd64
 
 GOBIN = build/bin
 GO ?= latest
 
-gubiq:
-	build/env.sh go run build/ci.go install ./cmd/gubiq
+gContractNet:
+	build/env.sh go run build/ci.go install ./cmd/gContractNet
 	@echo "Done building."
-	@echo "Run \"$(GOBIN)/gubiq\" to launch gubiq."
+	@echo "Run \"$(GOBIN)/gContractNet\" to launch gContractNet."
 
 evm:
 	build/env.sh go run build/ci.go install ./cmd/evm
@@ -27,12 +27,12 @@ all:
 android:
 	build/env.sh go run build/ci.go aar --local
 	@echo "Done building."
-	@echo "Import \"$(GOBIN)/gubiq.aar\" to use the library."
+	@echo "Import \"$(GOBIN)/gContractNet.aar\" to use the library."
 
 ios:
 	build/env.sh go run build/ci.go xcode --local
 	@echo "Done building."
-	@echo "Import \"$(GOBIN)/Gubiq.framework\" to use the library."
+	@echo "Import \"$(GOBIN)/GContractNet.framework\" to use the library."
 
 test: all
 	build/env.sh go run build/ci.go test
@@ -42,82 +42,82 @@ clean:
 
 # Cross Compilation Targets (xgo)
 
-gubiq-cross: gubiq-linux gubiq-darwin gubiq-windows gubiq-android gubiq-ios
+gContractNet-cross: gContractNet-linux gContractNet-darwin gContractNet-windows gContractNet-android gContractNet-ios
 	@echo "Full cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-*
+	@ls -ld $(GOBIN)/gContractNet-*
 
-gubiq-linux: gubiq-linux-386 gubiq-linux-amd64 gubiq-linux-arm gubiq-linux-mips64 gubiq-linux-mips64le
+gContractNet-linux: gContractNet-linux-386 gContractNet-linux-amd64 gContractNet-linux-arm gContractNet-linux-mips64 gContractNet-linux-mips64le
 	@echo "Linux cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-linux-*
+	@ls -ld $(GOBIN)/gContractNet-linux-*
 
-gubiq-linux-386:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/386 -v ./cmd/gubiq
+gContractNet-linux-386:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/386 -v ./cmd/gContractNet
 	@echo "Linux 386 cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-linux-* | grep 386
+	@ls -ld $(GOBIN)/gContractNet-linux-* | grep 386
 
-gubiq-linux-amd64:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/amd64 -v ./cmd/gubiq
+gContractNet-linux-amd64:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/amd64 -v ./cmd/gContractNet
 	@echo "Linux amd64 cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-linux-* | grep amd64
+	@ls -ld $(GOBIN)/gContractNet-linux-* | grep amd64
 
-gubiq-linux-arm: gubiq-linux-arm-5 gubiq-linux-arm-6 gubiq-linux-arm-7 gubiq-linux-arm64
+gContractNet-linux-arm: gContractNet-linux-arm-5 gContractNet-linux-arm-6 gContractNet-linux-arm-7 gContractNet-linux-arm64
 	@echo "Linux ARM cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-linux-* | grep arm
+	@ls -ld $(GOBIN)/gContractNet-linux-* | grep arm
 
-gubiq-linux-arm-5:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/arm-5 -v ./cmd/gubiq
+gContractNet-linux-arm-5:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/arm-5 -v ./cmd/gContractNet
 	@echo "Linux ARMv5 cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-linux-* | grep arm-5
+	@ls -ld $(GOBIN)/gContractNet-linux-* | grep arm-5
 
-gubiq-linux-arm-6:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/arm-6 -v ./cmd/gubiq
+gContractNet-linux-arm-6:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/arm-6 -v ./cmd/gContractNet
 	@echo "Linux ARMv6 cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-linux-* | grep arm-6
+	@ls -ld $(GOBIN)/gContractNet-linux-* | grep arm-6
 
-gubiq-linux-arm-7:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/arm-7 -v ./cmd/gubiq
+gContractNet-linux-arm-7:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/arm-7 -v ./cmd/gContractNet
 	@echo "Linux ARMv7 cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-linux-* | grep arm-7
+	@ls -ld $(GOBIN)/gContractNet-linux-* | grep arm-7
 
-gubiq-linux-arm64:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/arm64 -v ./cmd/gubiq
+gContractNet-linux-arm64:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/arm64 -v ./cmd/gContractNet
 	@echo "Linux ARM64 cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-linux-* | grep arm64
+	@ls -ld $(GOBIN)/gContractNet-linux-* | grep arm64
 
-gubiq-linux-mips64:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/mips64 -v ./cmd/gubiq
+gContractNet-linux-mips64:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/mips64 -v ./cmd/gContractNet
 	@echo "Linux MIPS64 cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-linux-* | grep mips64
+	@ls -ld $(GOBIN)/gContractNet-linux-* | grep mips64
 
-gubiq-linux-mips64le:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/mips64le -v ./cmd/gubiq
+gContractNet-linux-mips64le:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=linux/mips64le -v ./cmd/gContractNet
 	@echo "Linux MIPS64le cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-linux-* | grep mips64le
+	@ls -ld $(GOBIN)/gContractNet-linux-* | grep mips64le
 
-gubiq-darwin: gubiq-darwin-386 gubiq-darwin-amd64
+gContractNet-darwin: gContractNet-darwin-386 gContractNet-darwin-amd64
 	@echo "Darwin cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-darwin-*
+	@ls -ld $(GOBIN)/gContractNet-darwin-*
 
-gubiq-darwin-386:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=darwin/386 -v ./cmd/gubiq
+gContractNet-darwin-386:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=darwin/386 -v ./cmd/gContractNet
 	@echo "Darwin 386 cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-darwin-* | grep 386
+	@ls -ld $(GOBIN)/gContractNet-darwin-* | grep 386
 
-gubiq-darwin-amd64:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=darwin/amd64 -v ./cmd/gubiq
+gContractNet-darwin-amd64:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=darwin/amd64 -v ./cmd/gContractNet
 	@echo "Darwin amd64 cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-darwin-* | grep amd64
+	@ls -ld $(GOBIN)/gContractNet-darwin-* | grep amd64
 
-gubiq-windows: gubiq-windows-386 gubiq-windows-amd64
+gContractNet-windows: gContractNet-windows-386 gContractNet-windows-amd64
 	@echo "Windows cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-windows-*
+	@ls -ld $(GOBIN)/gContractNet-windows-*
 
-gubiq-windows-386:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=windows/386 -v ./cmd/gubiq
+gContractNet-windows-386:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=windows/386 -v ./cmd/gContractNet
 	@echo "Windows 386 cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-windows-* | grep 386
+	@ls -ld $(GOBIN)/gContractNet-windows-* | grep 386
 
-gubiq-windows-amd64:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=windows/amd64 -v ./cmd/gubiq
+gContractNet-windows-amd64:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --dest=$(GOBIN) --targets=windows/amd64 -v ./cmd/gContractNet
 	@echo "Windows amd64 cross compilation done:"
-	@ls -ld $(GOBIN)/gubiq-windows-* | grep amd64
+	@ls -ld $(GOBIN)/gContractNet-windows-* | grep amd64

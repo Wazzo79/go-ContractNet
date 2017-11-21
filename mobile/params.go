@@ -16,7 +16,7 @@
 
 // Contains all the wrappers from the params package.
 
-package gubiq
+package gContractNet
 
 import (
 	"github.com/ContractNetLabs/go-ContractNet/core"

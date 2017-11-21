@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
 
-package gubiq
+package gContractNet
 
 import (
 	"io/ioutil"
@@ -37,14 +37,14 @@ package go;
 import android.test.InstrumentationTestCase;
 import android.test.MoreAsserts;
 
-import org.ethereum.gubiq.*;
+import org.ethereum.gContractNet.*;
 
 public class AndroidTest extends InstrumentationTestCase {
 	public AndroidTest() {}
 
 	public void testAccountManagement() {
 		// Create an encrypted keystore with light crypto parameters.
-		KeyStore ks = new KeyStore(getInstrumentation().getContext().getFilesDir() + "/keystore", Gubiq.LightScryptN, Gubiq.LightScryptP);
+		KeyStore ks = new KeyStore(getInstrumentation().getContext().getFilesDir() + "/keystore", GContractNet.LightScryptN, GContractNet.LightScryptP);
 
 		try {
 			// Create a new account with the specified encryption passphrase.
@@ -150,7 +150,7 @@ func TestAndroid(t *testing.T) {
 		t.Logf("initialization took %v", time.Since(start))
 	}
 	// Create and switch to a temporary workspace
-	workspace, err := ioutil.TempDir("", "gubiq-android-")
+	workspace, err := ioutil.TempDir("", "gContractNet-android-")
 	if err != nil {
 		t.Fatalf("failed to create temporary workspace: %v", err)
 	}
@@ -166,21 +166,21 @@ func TestAndroid(t *testing.T) {
 	defer os.Chdir(pwd)
 
 	// Create the skeleton of the Android project
-	for _, dir := range []string{"src/main", "src/androidTest/java/org/ethereum/gubiqtest", "libs"} {
+	for _, dir := range []string{"src/main", "src/androidTest/java/org/ethereum/gContractNettest", "libs"} {
 		err = os.MkdirAll(dir, os.ModePerm)
 		if err != nil {
 			t.Fatal(err)
 		}
 	}
-	// Generate the mobile bindings for Gubiq and add the tester class
+	// Generate the mobile bindings for GContractNet and add the tester class
 	gobind := exec.Command("gomobile", "bind", "-javapkg", "org.ethereum", "github.com/ContractNetLabs/go-ContractNet/mobile")
 	if output, err := gobind.CombinedOutput(); err != nil {
 		t.Logf("%s", output)
 		t.Fatalf("failed to run gomobile bind: %v", err)
 	}
-	build.CopyFile(filepath.Join("libs", "gubiq.aar"), "gubiq.aar", os.ModePerm)
+	build.CopyFile(filepath.Join("libs", "gContractNet.aar"), "gContractNet.aar", os.ModePerm)
 
-	if err = ioutil.WriteFile(filepath.Join("src", "androidTest", "java", "org", "ubiq", "gubiqtest", "AndroidTest.java"), []byte(androidTestClass), os.ModePerm); err != nil {
+	if err = ioutil.WriteFile(filepath.Join("src", "androidTest", "java", "org", "ubiq", "gContractNettest", "AndroidTest.java"), []byte(androidTestClass), os.ModePerm); err != nil {
 		t.Fatalf("failed to write Android test class: %v", err)
 	}
 	// Finish creating the project and run the tests via gradle
@@ -198,7 +198,7 @@ func TestAndroid(t *testing.T) {
 
 const androidManifest = `<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="org.ethereum.gubiqtest"
+          package="org.ethereum.gContractNettest"
 	  android:versionCode="1"
 	  android:versionName="1.0">
 
@@ -227,6 +227,6 @@ repositories {
 }
 dependencies {
     compile 'com.android.support:appcompat-v7:19.0.0'
-    compile(name: "gubiq", ext: "aar")
+    compile(name: "gContractNet", ext: "aar")
 }
 `

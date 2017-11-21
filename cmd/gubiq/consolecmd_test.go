@@ -37,28 +37,28 @@ import (
 func TestConsoleWelcome(t *testing.T) {
 	coinbase := "0x8605cdbbdb6d264aa742e77020dcbc58fcdce182"
 
-	// Start a gubiq console, make sure it's cleaned up and terminate the console
-	gubiq := runGubiq(t,
+	// Start a gContractNet console, make sure it's cleaned up and terminate the console
+	gContractNet := runGContractNet(t,
 		"--port", "0", "--maxpeers", "0", "--nodiscover", "--nat", "none",
 		"--etherbase", coinbase, "--shh",
 		"console")
 
 	// Gather all the infos the welcome message needs to contain
-	gubiq.setTemplateFunc("goos", func() string { return runtime.GOOS })
-	gubiq.setTemplateFunc("gover", runtime.Version)
-	gubiq.setTemplateFunc("gubiqver", func() string { return utils.Version })
-	gubiq.setTemplateFunc("niltime", func() string { return time.Unix(0, 0).Format(time.RFC1123) })
-	gubiq.setTemplateFunc("apis", func() []string {
+	gContractNet.setTemplateFunc("goos", func() string { return runtime.GOOS })
+	gContractNet.setTemplateFunc("gover", runtime.Version)
+	gContractNet.setTemplateFunc("gContractNetver", func() string { return utils.Version })
+	gContractNet.setTemplateFunc("niltime", func() string { return time.Unix(0, 0).Format(time.RFC1123) })
+	gContractNet.setTemplateFunc("apis", func() []string {
 		apis := append(strings.Split(rpc.DefaultIPCApis, ","), rpc.MetadataApi)
 		sort.Strings(apis)
 		return apis
 	})
 
 	// Verify the actual welcome message to the required template
-	gubiq.expect(`
-Welcome to the Gubiq JavaScript console!
+	gContractNet.expect(`
+Welcome to the GContractNet JavaScript console!
 
-instance: Gubiq/v{{gubiqver}}/{{goos}}/{{gover}}
+instance: GContractNet/v{{gContractNetver}}/{{goos}}/{{gover}}
 coinbase: {{.Etherbase}}
 at block: 0 ({{niltime}})
  datadir: {{.Datadir}}
@@ -66,7 +66,7 @@ at block: 0 ({{niltime}})
 
 > {{.InputLine "exit"}}
 `)
-	gubiq.expectExit()
+	gContractNet.expectExit()
 }
 
 // Tests that a console can be attached to a running node via various means.
@@ -75,68 +75,68 @@ func TestIPCAttachWelcome(t *testing.T) {
 	coinbase := "0x8605cdbbdb6d264aa742e77020dcbc58fcdce182"
 	var ipc string
 	if runtime.GOOS == "windows" {
-		ipc = `\\.\pipe\gubiq` + strconv.Itoa(trulyRandInt(100000, 999999))
+		ipc = `\\.\pipe\gContractNet` + strconv.Itoa(trulyRandInt(100000, 999999))
 	} else {
 		ws := tmpdir(t)
 		defer os.RemoveAll(ws)
-		ipc = filepath.Join(ws, "gubiq.ipc")
+		ipc = filepath.Join(ws, "gContractNet.ipc")
 	}
 	// Note: we need --shh because testAttachWelcome checks for default
 	// list of ipc modules and shh is included there.
-	gubiq := runGubiq(t,
+	gContractNet := runGContractNet(t,
 		"--port", "0", "--maxpeers", "0", "--nodiscover", "--nat", "none",
 		"--etherbase", coinbase, "--shh", "--ipcpath", ipc)
 
 	time.Sleep(2 * time.Second) // Simple way to wait for the RPC endpoint to open
-	testAttachWelcome(t, gubiq, "ipc:"+ipc)
+	testAttachWelcome(t, gContractNet, "ipc:"+ipc)
 
-	gubiq.interrupt()
-	gubiq.expectExit()
+	gContractNet.interrupt()
+	gContractNet.expectExit()
 }
 
 func TestHTTPAttachWelcome(t *testing.T) {
 	coinbase := "0x8605cdbbdb6d264aa742e77020dcbc58fcdce182"
 	port := strconv.Itoa(trulyRandInt(1024, 65536)) // Yeah, sometimes this will fail, sorry :P
-	gubiq := runGubiq(t,
+	gContractNet := runGContractNet(t,
 		"--port", "0", "--maxpeers", "0", "--nodiscover", "--nat", "none",
 		"--etherbase", coinbase, "--rpc", "--rpcport", port)
 
 	time.Sleep(2 * time.Second) // Simple way to wait for the RPC endpoint to open
-	testAttachWelcome(t, gubiq, "http://localhost:"+port)
+	testAttachWelcome(t, gContractNet, "http://localhost:"+port)
 
-	gubiq.interrupt()
-	gubiq.expectExit()
+	gContractNet.interrupt()
+	gContractNet.expectExit()
 }
 
 func TestWSAttachWelcome(t *testing.T) {
 	coinbase := "0x8605cdbbdb6d264aa742e77020dcbc58fcdce182"
 	port := strconv.Itoa(trulyRandInt(1024, 65536)) // Yeah, sometimes this will fail, sorry :P
 
-	gubiq := runGubiq(t,
+	gContractNet := runGContractNet(t,
 		"--port", "0", "--maxpeers", "0", "--nodiscover", "--nat", "none",
 		"--etherbase", coinbase, "--ws", "--wsport", port)
 
 	time.Sleep(2 * time.Second) // Simple way to wait for the RPC endpoint to open
-	testAttachWelcome(t, gubiq, "ws://localhost:"+port)
+	testAttachWelcome(t, gContractNet, "ws://localhost:"+port)
 
-	gubiq.interrupt()
-	gubiq.expectExit()
+	gContractNet.interrupt()
+	gContractNet.expectExit()
 }
 
-func testAttachWelcome(t *testing.T, gubiq *testgubiq, endpoint string) {
-	// Attach to a running gubiq note and terminate immediately
-	attach := runGubiq(t, "attach", endpoint)
+func testAttachWelcome(t *testing.T, gContractNet *testgContractNet, endpoint string) {
+	// Attach to a running gContractNet note and terminate immediately
+	attach := runGContractNet(t, "attach", endpoint)
 	defer attach.expectExit()
 	attach.stdin.Close()
 
 	// Gather all the infos the welcome message needs to contain
 	attach.setTemplateFunc("goos", func() string { return runtime.GOOS })
 	attach.setTemplateFunc("gover", runtime.Version)
-	attach.setTemplateFunc("gubiqver", func() string { return utils.Version })
-	attach.setTemplateFunc("etherbase", func() string { return gubiq.Etherbase })
+	attach.setTemplateFunc("gContractNetver", func() string { return utils.Version })
+	attach.setTemplateFunc("etherbase", func() string { return gContractNet.Etherbase })
 	attach.setTemplateFunc("niltime", func() string { return time.Unix(0, 0).Format(time.RFC1123) })
 	attach.setTemplateFunc("ipc", func() bool { return strings.HasPrefix(endpoint, "ipc") })
-	attach.setTemplateFunc("datadir", func() string { return gubiq.Datadir })
+	attach.setTemplateFunc("datadir", func() string { return gContractNet.Datadir })
 	attach.setTemplateFunc("apis", func() []string {
 		var apis []string
 		if strings.HasPrefix(endpoint, "ipc") {
@@ -150,9 +150,9 @@ func testAttachWelcome(t *testing.T, gubiq *testgubiq, endpoint string) {
 
 	// Verify the actual welcome message to the required template
 	attach.expect(`
-Welcome to the Gubiq JavaScript console!
+Welcome to the GContractNet JavaScript console!
 
-instance: Gubiq/v{{gubiqver}}/{{goos}}/{{gover}}
+instance: GContractNet/v{{gContractNetver}}/{{goos}}/{{gover}}
 coinbase: {{etherbase}}
 at block: 0 ({{niltime}}){{if ipc}}
  datadir: {{datadir}}{{end}}

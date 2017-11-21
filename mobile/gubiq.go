@@ -17,7 +17,7 @@
 // Contains all the wrappers from the node package to support client side node
 // management on mobile platforms.
 
-package gubiq
+package gContractNet
 
 import (
 	"fmt"
@@ -35,7 +35,7 @@ import (
 	"github.com/ContractNetLabs/go-ContractNet/whisper/whisperv2"
 )
 
-// NodeConfig represents the collection of configuration values to fine tune the Gubiq
+// NodeConfig represents the collection of configuration values to fine tune the GContractNet
 // node embedded into a mobile process. The available values are a subset of the
 // entire API provided by go-ethereum to reduce the maintenance surface and dev
 // complexity.
@@ -93,12 +93,12 @@ func NewNodeConfig() *NodeConfig {
 	return &config
 }
 
-// Node represents a Gubiq Ethereum node instance.
+// Node represents a GContractNet Ethereum node instance.
 type Node struct {
 	node *node.Node
 }
 
-// NewNode creates and configures a new Gubiq node.
+// NewNode creates and configures a new GContractNet node.
 func NewNode(datadir string, config *NodeConfig) (stack *Node, _ error) {
 	// If no or partial configurations were specified, use defaults
 	if config == nil {
