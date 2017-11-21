@@ -38,9 +38,9 @@ func DefaultDataDir() string {
 	home := homeDir()
 	if home != "" {
 		if runtime.GOOS == "darwin" {
-			return filepath.Join(home, "Library", "Ubiq")
+			return filepath.Join(home, "Library", "ContractNet")
 		} else if runtime.GOOS == "windows" {
-			return filepath.Join(home, "AppData", "Roaming", "Ubiq")
+			return filepath.Join(home, "AppData", "Roaming", "ContractNet")
 		} else {
 			return filepath.Join(home, ".ubiq")
 		}
