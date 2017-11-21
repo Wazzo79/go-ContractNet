@@ -20,14 +20,14 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/core"
-	"github.com/ubiq/go-ubiq/core/types"
-	"github.com/ubiq/go-ubiq/crypto"
-	"github.com/ubiq/go-ubiq/eth/downloader"
-	"github.com/ubiq/go-ubiq/p2p"
-	"github.com/ubiq/go-ubiq/rlp"
-	"github.com/ubiq/go-ubiq/trie"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/core"
+	"github.com/ContractNetLabs/go-ContractNet/core/types"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/eth/downloader"
+	"github.com/ContractNetLabs/go-ContractNet/p2p"
+	"github.com/ContractNetLabs/go-ContractNet/rlp"
+	"github.com/ContractNetLabs/go-ContractNet/trie"
 )
 
 func expectResponse(r p2p.MsgReader, msgcode, reqID, bv uint64, data interface{}) error {

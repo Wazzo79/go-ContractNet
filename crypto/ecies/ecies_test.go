@@ -42,7 +42,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ubiq/go-ubiq/crypto/secp256k1"
+	"github.com/ContractNetLabs/go-ContractNet/crypto/secp256k1"
 )
 
 var dumpEnc bool

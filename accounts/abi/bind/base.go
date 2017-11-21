@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ubiq/go-ubiq"
-	"github.com/ubiq/go-ubiq/accounts/abi"
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/core/types"
-	"github.com/ubiq/go-ubiq/crypto"
+	"github.com/ContractNetLabs/go-ContractNet"
+	"github.com/ContractNetLabs/go-ContractNet/accounts/abi"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/core/types"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
 	"golang.org/x/net/context"
 )
 

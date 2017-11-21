@@ -26,10 +26,10 @@ import (
 	"math"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/crypto"
-	"github.com/ubiq/go-ubiq/crypto/ecies"
-	"github.com/ubiq/go-ubiq/rlp"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/crypto/ecies"
+	"github.com/ContractNetLabs/go-ContractNet/rlp"
 )
 
 // Envelope represents a clear-text data packet to transmit through the Whisper

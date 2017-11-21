@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ubiq/go-ubiq/params"
-	"github.com/ubiq/go-ubiq/rpc"
+	"github.com/ContractNetLabs/go-ContractNet/params"
+	"github.com/ContractNetLabs/go-ContractNet/rpc"
 )
 
 // Tests that a node embedded within a console can be started up properly and

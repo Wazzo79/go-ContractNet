@@ -20,7 +20,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ubiq/go-ubiq/common"
+	"github.com/ContractNetLabs/go-ContractNet/common"
 )
 
 func TestSet(t *testing.T) {

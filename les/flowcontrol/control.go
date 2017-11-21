@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common/mclock"
+	"github.com/ContractNetLabs/go-ContractNet/common/mclock"
 )
 
 const fcTimeConst = time.Millisecond

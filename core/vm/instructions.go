@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/common/math"
-	"github.com/ubiq/go-ubiq/core/types"
-	"github.com/ubiq/go-ubiq/crypto"
-	"github.com/ubiq/go-ubiq/params"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/common/math"
+	"github.com/ContractNetLabs/go-ContractNet/core/types"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/params"
 )
 
 func opAdd(pc *uint64, env *EVM, contract *Contract, memory *Memory, stack *Stack) ([]byte, error) {

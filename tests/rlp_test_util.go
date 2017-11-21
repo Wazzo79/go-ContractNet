@@ -26,7 +26,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ubiq/go-ubiq/rlp"
+	"github.com/ContractNetLabs/go-ContractNet/rlp"
 )
 
 // RLPTest is the JSON structure of a single RLP test.

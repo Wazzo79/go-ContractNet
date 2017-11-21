@@ -22,13 +22,13 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/logger"
-	"github.com/ubiq/go-ubiq/logger/glog"
-	"github.com/ubiq/go-ubiq/p2p/discover"
-	"github.com/ubiq/go-ubiq/p2p/netutil"
-	"github.com/ubiq/go-ubiq/swarm/network/kademlia"
-	"github.com/ubiq/go-ubiq/swarm/storage"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/logger"
+	"github.com/ContractNetLabs/go-ContractNet/logger/glog"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/discover"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/netutil"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/network/kademlia"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/storage"
 )
 
 // Hive is the logistic manager of the swarm

@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/swarm/api"
-	"github.com/ubiq/go-ubiq/swarm/storage"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/api"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/storage"
 )
 
 func TestBzzrGetPath(t *testing.T) {

@@ -17,7 +17,7 @@
 package geth
 
 import (
-	"github.com/ubiq/go-ubiq/logger/glog"
+	"github.com/ContractNetLabs/go-ContractNet/logger/glog"
 )
 
 // SetVerbosity sets the global verbosity level (between 0 and 6 - see logger/verbosity.go).

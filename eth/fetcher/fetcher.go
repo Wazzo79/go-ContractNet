@@ -23,11 +23,11 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/core"
-	"github.com/ubiq/go-ubiq/core/types"
-	"github.com/ubiq/go-ubiq/logger"
-	"github.com/ubiq/go-ubiq/logger/glog"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/core"
+	"github.com/ContractNetLabs/go-ContractNet/core/types"
+	"github.com/ContractNetLabs/go-ContractNet/logger"
+	"github.com/ContractNetLabs/go-ContractNet/logger/glog"
 	"gopkg.in/karalabe/cookiejar.v2/collections/prque"
 )
 

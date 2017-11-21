@@ -25,15 +25,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/core"
-	"github.com/ubiq/go-ubiq/core/state"
-	"github.com/ubiq/go-ubiq/core/types"
-	"github.com/ubiq/go-ubiq/crypto"
-	"github.com/ubiq/go-ubiq/ethdb"
-	"github.com/ubiq/go-ubiq/event"
-	"github.com/ubiq/go-ubiq/params"
-	"github.com/ubiq/go-ubiq/trie"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/core"
+	"github.com/ContractNetLabs/go-ContractNet/core/state"
+	"github.com/ContractNetLabs/go-ContractNet/core/types"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/ethdb"
+	"github.com/ContractNetLabs/go-ContractNet/event"
+	"github.com/ContractNetLabs/go-ContractNet/params"
+	"github.com/ContractNetLabs/go-ContractNet/trie"
 )
 
 var (

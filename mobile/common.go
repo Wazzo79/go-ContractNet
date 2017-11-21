@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ubiq/go-ubiq/common"
+	"github.com/ContractNetLabs/go-ContractNet/common"
 )
 
 // Hash represents the 32 byte Keccak256 hash of arbitrary data.

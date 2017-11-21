@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ubiq/go-ubiq/common"
+	"github.com/ContractNetLabs/go-ContractNet/common"
 )
 
 // Disassemble disassembles the byte code and returns the string

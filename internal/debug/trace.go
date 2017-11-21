@@ -23,8 +23,8 @@ import (
 	"os"
 	"runtime/trace"
 
-	"github.com/ubiq/go-ubiq/logger"
-	"github.com/ubiq/go-ubiq/logger/glog"
+	"github.com/ContractNetLabs/go-ContractNet/logger"
+	"github.com/ContractNetLabs/go-ContractNet/logger/glog"
 )
 
 // StartGoTrace turns on tracing, writing to the given file.

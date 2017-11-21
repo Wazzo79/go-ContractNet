@@ -21,12 +21,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/core/types"
-	"github.com/ubiq/go-ubiq/eth/downloader"
-	"github.com/ubiq/go-ubiq/logger"
-	"github.com/ubiq/go-ubiq/logger/glog"
-	"github.com/ubiq/go-ubiq/p2p/discover"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/core/types"
+	"github.com/ContractNetLabs/go-ContractNet/eth/downloader"
+	"github.com/ContractNetLabs/go-ContractNet/logger"
+	"github.com/ContractNetLabs/go-ContractNet/logger/glog"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/discover"
 )
 
 const (

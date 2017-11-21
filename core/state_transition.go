@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/core/vm"
-	"github.com/ubiq/go-ubiq/logger"
-	"github.com/ubiq/go-ubiq/logger/glog"
-	"github.com/ubiq/go-ubiq/params"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/core/vm"
+	"github.com/ContractNetLabs/go-ContractNet/logger"
+	"github.com/ContractNetLabs/go-ContractNet/logger/glog"
+	"github.com/ContractNetLabs/go-ContractNet/params"
 )
 
 var (

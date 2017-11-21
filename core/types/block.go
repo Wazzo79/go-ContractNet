@@ -28,10 +28,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/common/hexutil"
-	"github.com/ubiq/go-ubiq/crypto/sha3"
-	"github.com/ubiq/go-ubiq/rlp"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/common/hexutil"
+	"github.com/ContractNetLabs/go-ContractNet/crypto/sha3"
+	"github.com/ContractNetLabs/go-ContractNet/rlp"
 )
 
 var (

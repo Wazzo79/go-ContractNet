@@ -22,8 +22,8 @@ import (
 	_ "net/http/pprof"
 	"runtime"
 
-	"github.com/ubiq/go-ubiq/logger"
-	"github.com/ubiq/go-ubiq/logger/glog"
+	"github.com/ContractNetLabs/go-ContractNet/logger"
+	"github.com/ContractNetLabs/go-ContractNet/logger/glog"
 	"gopkg.in/urfave/cli.v1"
 )
 

@@ -30,7 +30,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common"
+	"github.com/ContractNetLabs/go-ContractNet/common"
 )
 
 const (

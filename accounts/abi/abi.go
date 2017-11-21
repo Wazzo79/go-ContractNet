@@ -24,7 +24,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/ubiq/go-ubiq/common"
+	"github.com/ContractNetLabs/go-ContractNet/common"
 )
 
 // The ABI holds information about a contract's context and available

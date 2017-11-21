@@ -27,9 +27,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/ubiq/go-ubiq/internal/jsre"
-	"github.com/ubiq/go-ubiq/internal/web3ext"
-	"github.com/ubiq/go-ubiq/rpc"
+	"github.com/ContractNetLabs/go-ContractNet/internal/jsre"
+	"github.com/ContractNetLabs/go-ContractNet/internal/web3ext"
+	"github.com/ContractNetLabs/go-ContractNet/rpc"
 	"github.com/mattn/go-colorable"
 	"github.com/peterh/liner"
 	"github.com/robertkrimen/otto"

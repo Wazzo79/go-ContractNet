@@ -20,10 +20,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ubiq/go-ubiq/accounts/abi/bind"
-	"github.com/ubiq/go-ubiq/accounts/abi/bind/backends"
-	"github.com/ubiq/go-ubiq/core"
-	"github.com/ubiq/go-ubiq/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/accounts/abi/bind"
+	"github.com/ContractNetLabs/go-ContractNet/accounts/abi/bind/backends"
+	"github.com/ContractNetLabs/go-ContractNet/core"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
 )
 
 var (

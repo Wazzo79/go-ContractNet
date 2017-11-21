@@ -20,7 +20,7 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/ubiq/go-ubiq/common"
+	"github.com/ContractNetLabs/go-ContractNet/common"
 )
 
 var (

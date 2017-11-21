@@ -25,9 +25,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ubiq/go-ubiq/logger/glog"
-	"github.com/ubiq/go-ubiq/params"
-	"github.com/ubiq/go-ubiq/tests"
+	"github.com/ContractNetLabs/go-ContractNet/logger/glog"
+	"github.com/ContractNetLabs/go-ContractNet/params"
+	"github.com/ContractNetLabs/go-ContractNet/tests"
 	"gopkg.in/urfave/cli.v1"
 )
 

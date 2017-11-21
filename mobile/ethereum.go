@@ -22,8 +22,8 @@ import (
 	"errors"
 	"math/big"
 
-	ethereum "github.com/ubiq/go-ubiq"
-	"github.com/ubiq/go-ubiq/common"
+	ethereum "github.com/ContractNetLabs/go-ContractNet"
+	"github.com/ContractNetLabs/go-ContractNet/common"
 )
 
 // Subscription represents an event subscription where events are

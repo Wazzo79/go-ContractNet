@@ -19,8 +19,8 @@ package ethapi
 import (
 	"sync"
 
-	"github.com/ubiq/go-ubiq/common/compiler"
-	"github.com/ubiq/go-ubiq/rpc"
+	"github.com/ContractNetLabs/go-ContractNet/common/compiler"
+	"github.com/ContractNetLabs/go-ContractNet/rpc"
 )
 
 func makeCompilerAPIs(solcPath string) []rpc.API {

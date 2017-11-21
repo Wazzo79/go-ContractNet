@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ubiq/go-ubiq/crypto"
-	"github.com/ubiq/go-ubiq/p2p"
-	"github.com/ubiq/go-ubiq/rpc"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/p2p"
+	"github.com/ContractNetLabs/go-ContractNet/rpc"
 )
 
 var (

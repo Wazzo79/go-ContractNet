@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ubiq/go-ubiq/p2p"
-	"github.com/ubiq/go-ubiq/p2p/discover"
+	"github.com/ContractNetLabs/go-ContractNet/p2p"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/discover"
 )
 
 // Tests that fast sync gets disabled as soon as a real block is successfully

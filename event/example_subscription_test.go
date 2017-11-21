@@ -19,7 +19,7 @@ package event_test
 import (
 	"fmt"
 
-	"github.com/ubiq/go-ubiq/event"
+	"github.com/ContractNetLabs/go-ContractNet/event"
 )
 
 func ExampleNewSubscription() {

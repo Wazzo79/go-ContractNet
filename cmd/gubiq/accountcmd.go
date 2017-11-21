@@ -20,13 +20,13 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/ubiq/go-ubiq/accounts"
-	"github.com/ubiq/go-ubiq/accounts/keystore"
-	"github.com/ubiq/go-ubiq/cmd/utils"
-	"github.com/ubiq/go-ubiq/console"
-	"github.com/ubiq/go-ubiq/crypto"
-	"github.com/ubiq/go-ubiq/logger"
-	"github.com/ubiq/go-ubiq/logger/glog"
+	"github.com/ContractNetLabs/go-ContractNet/accounts"
+	"github.com/ContractNetLabs/go-ContractNet/accounts/keystore"
+	"github.com/ContractNetLabs/go-ContractNet/cmd/utils"
+	"github.com/ContractNetLabs/go-ContractNet/console"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/logger"
+	"github.com/ContractNetLabs/go-ContractNet/logger/glog"
 	"gopkg.in/urfave/cli.v1"
 )
 

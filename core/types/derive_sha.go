@@ -19,9 +19,9 @@ package types
 import (
 	"bytes"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/rlp"
-	"github.com/ubiq/go-ubiq/trie"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/rlp"
+	"github.com/ContractNetLabs/go-ContractNet/trie"
 )
 
 type DerivableList interface {

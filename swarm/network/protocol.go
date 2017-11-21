@@ -36,15 +36,15 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ubiq/go-ubiq/contracts/chequebook"
-	"github.com/ubiq/go-ubiq/errs"
-	"github.com/ubiq/go-ubiq/logger"
-	"github.com/ubiq/go-ubiq/logger/glog"
-	"github.com/ubiq/go-ubiq/p2p"
-	"github.com/ubiq/go-ubiq/p2p/discover"
-	bzzswap "github.com/ubiq/go-ubiq/swarm/services/swap"
-	"github.com/ubiq/go-ubiq/swarm/services/swap/swap"
-	"github.com/ubiq/go-ubiq/swarm/storage"
+	"github.com/ContractNetLabs/go-ContractNet/contracts/chequebook"
+	"github.com/ContractNetLabs/go-ContractNet/errs"
+	"github.com/ContractNetLabs/go-ContractNet/logger"
+	"github.com/ContractNetLabs/go-ContractNet/logger/glog"
+	"github.com/ContractNetLabs/go-ContractNet/p2p"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/discover"
+	bzzswap "github.com/ContractNetLabs/go-ContractNet/swarm/services/swap"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/services/swap/swap"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/storage"
 )
 
 const (

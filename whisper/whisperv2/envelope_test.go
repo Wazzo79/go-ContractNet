@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ubiq/go-ubiq/crypto"
-	"github.com/ubiq/go-ubiq/crypto/ecies"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/crypto/ecies"
 )
 
 func TestEnvelopeOpen(t *testing.T) {

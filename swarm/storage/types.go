@@ -24,8 +24,8 @@ import (
 	"io"
 	"sync"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/crypto/sha3"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/crypto/sha3"
 )
 
 type Hasher func() hash.Hash

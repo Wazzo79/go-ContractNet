@@ -26,9 +26,9 @@ import (
 	"strings"
 
 	"github.com/ethereum/ethash"
-	"github.com/ubiq/go-ubiq/cmd/utils"
-	"github.com/ubiq/go-ubiq/eth"
-	"github.com/ubiq/go-ubiq/params"
+	"github.com/ContractNetLabs/go-ContractNet/cmd/utils"
+	"github.com/ContractNetLabs/go-ContractNet/eth"
+	"github.com/ContractNetLabs/go-ContractNet/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

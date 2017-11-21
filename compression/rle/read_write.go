@@ -21,7 +21,7 @@ import (
 	"bytes"
 	"errors"
 
-	"github.com/ubiq/go-ubiq/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
 )
 
 const (

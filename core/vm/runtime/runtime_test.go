@@ -21,11 +21,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ubiq/go-ubiq/accounts/abi"
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/core/state"
-	"github.com/ubiq/go-ubiq/core/vm"
-	"github.com/ubiq/go-ubiq/ethdb"
+	"github.com/ContractNetLabs/go-ContractNet/accounts/abi"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/core/state"
+	"github.com/ContractNetLabs/go-ContractNet/core/vm"
+	"github.com/ContractNetLabs/go-ContractNet/ethdb"
 )
 
 func TestDefaults(t *testing.T) {

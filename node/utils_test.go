@@ -22,8 +22,8 @@ package node
 import (
 	"reflect"
 
-	"github.com/ubiq/go-ubiq/p2p"
-	"github.com/ubiq/go-ubiq/rpc"
+	"github.com/ContractNetLabs/go-ContractNet/p2p"
+	"github.com/ContractNetLabs/go-ContractNet/rpc"
 )
 
 // NoopService is a trivial implementation of the Service interface.

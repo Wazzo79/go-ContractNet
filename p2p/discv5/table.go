@@ -29,7 +29,7 @@ import (
 	"net"
 	"sort"
 
-	"github.com/ubiq/go-ubiq/common"
+	"github.com/ContractNetLabs/go-ContractNet/common"
 )
 
 const (

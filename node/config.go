@@ -26,17 +26,17 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ubiq/go-ubiq/accounts"
-	"github.com/ubiq/go-ubiq/accounts/keystore"
-	"github.com/ubiq/go-ubiq/accounts/usbwallet"
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/crypto"
-	"github.com/ubiq/go-ubiq/logger"
-	"github.com/ubiq/go-ubiq/logger/glog"
-	"github.com/ubiq/go-ubiq/p2p/discover"
-	"github.com/ubiq/go-ubiq/p2p/discv5"
-	"github.com/ubiq/go-ubiq/p2p/nat"
-	"github.com/ubiq/go-ubiq/p2p/netutil"
+	"github.com/ContractNetLabs/go-ContractNet/accounts"
+	"github.com/ContractNetLabs/go-ContractNet/accounts/keystore"
+	"github.com/ContractNetLabs/go-ContractNet/accounts/usbwallet"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/logger"
+	"github.com/ContractNetLabs/go-ContractNet/logger/glog"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/discover"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/discv5"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/nat"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/netutil"
 )
 
 var (

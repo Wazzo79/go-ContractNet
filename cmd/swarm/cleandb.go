@@ -19,7 +19,7 @@ package main
 import (
 	"log"
 
-	"github.com/ubiq/go-ubiq/swarm/storage"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/storage"
 	"gopkg.in/urfave/cli.v1"
 )
 

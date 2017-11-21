@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ubiq/go-ubiq/crypto"
-	"github.com/ubiq/go-ubiq/crypto/sha3"
-	"github.com/ubiq/go-ubiq/p2p/discover"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/crypto/sha3"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/discover"
 )
 
 func init() {

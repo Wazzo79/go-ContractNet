@@ -3,7 +3,7 @@ package vm
 import (
 	"fmt"
 
-	"github.com/ubiq/go-ubiq/params"
+	"github.com/ContractNetLabs/go-ContractNet/params"
 )
 
 func makeStackFunc(pop, diff int) stackValidationFunc {

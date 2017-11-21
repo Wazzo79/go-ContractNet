@@ -27,11 +27,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/eth"
-	"github.com/ubiq/go-ubiq/internal/jsre"
-	"github.com/ubiq/go-ubiq/node"
-	"github.com/ubiq/go-ubiq/params"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/eth"
+	"github.com/ContractNetLabs/go-ContractNet/internal/jsre"
+	"github.com/ContractNetLabs/go-ContractNet/node"
+	"github.com/ContractNetLabs/go-ContractNet/params"
 )
 
 const (

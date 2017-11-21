@@ -20,11 +20,11 @@ import (
 	"container/list"
 	"fmt"
 
-	"github.com/ubiq/go-ubiq/core/types"
-	// "github.com/ubiq/go-ubiq/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/core/types"
+	// "github.com/ContractNetLabs/go-ContractNet/crypto"
 
-	"github.com/ubiq/go-ubiq/ethdb"
-	"github.com/ubiq/go-ubiq/event"
+	"github.com/ContractNetLabs/go-ContractNet/ethdb"
+	"github.com/ContractNetLabs/go-ContractNet/event"
 )
 
 // Implement our EthTest Manager

@@ -24,15 +24,15 @@ import (
 	"math/big"
 	"path/filepath"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/eth"
-	"github.com/ubiq/go-ubiq/ethclient"
-	"github.com/ubiq/go-ubiq/ethstats"
-	"github.com/ubiq/go-ubiq/les"
-	"github.com/ubiq/go-ubiq/node"
-	"github.com/ubiq/go-ubiq/p2p/nat"
-	"github.com/ubiq/go-ubiq/params"
-	"github.com/ubiq/go-ubiq/whisper/whisperv2"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/eth"
+	"github.com/ContractNetLabs/go-ContractNet/ethclient"
+	"github.com/ContractNetLabs/go-ContractNet/ethstats"
+	"github.com/ContractNetLabs/go-ContractNet/les"
+	"github.com/ContractNetLabs/go-ContractNet/node"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/nat"
+	"github.com/ContractNetLabs/go-ContractNet/params"
+	"github.com/ContractNetLabs/go-ContractNet/whisper/whisperv2"
 )
 
 // NodeConfig represents the collection of configuration values to fine tune the Gubiq

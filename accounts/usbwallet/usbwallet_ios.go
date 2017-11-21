@@ -25,7 +25,7 @@ package usbwallet
 import (
 	"errors"
 
-	"github.com/ubiq/go-ubiq/accounts"
+	"github.com/ContractNetLabs/go-ContractNet/accounts"
 )
 
 // Here be dragons! There is no USB support on iOS.

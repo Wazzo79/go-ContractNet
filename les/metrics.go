@@ -17,8 +17,8 @@
 package les
 
 import (
-	"github.com/ubiq/go-ubiq/metrics"
-	"github.com/ubiq/go-ubiq/p2p"
+	"github.com/ContractNetLabs/go-ContractNet/metrics"
+	"github.com/ContractNetLabs/go-ContractNet/p2p"
 )
 
 var (

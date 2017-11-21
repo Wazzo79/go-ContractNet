@@ -3,8 +3,8 @@ package vm
 import (
 	"math/big"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/params"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/params"
 )
 
 func memoryGasCost(mem *Memory, newMemSize *big.Int) *big.Int {

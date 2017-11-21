@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/crypto"
-	whisper "github.com/ubiq/go-ubiq/whisper/whisperv5"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
+	whisper "github.com/ContractNetLabs/go-ContractNet/whisper/whisperv5"
 )
 
 const powRequirement = 0.00001

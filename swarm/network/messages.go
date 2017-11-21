@@ -21,11 +21,11 @@ import (
 	"net"
 	"time"
 
-	"github.com/ubiq/go-ubiq/contracts/chequebook"
-	"github.com/ubiq/go-ubiq/p2p/discover"
-	"github.com/ubiq/go-ubiq/swarm/network/kademlia"
-	"github.com/ubiq/go-ubiq/swarm/services/swap"
-	"github.com/ubiq/go-ubiq/swarm/storage"
+	"github.com/ContractNetLabs/go-ContractNet/contracts/chequebook"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/discover"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/network/kademlia"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/services/swap"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/storage"
 )
 
 /*

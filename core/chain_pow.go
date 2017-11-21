@@ -19,8 +19,8 @@ package core
 import (
 	"runtime"
 
-	"github.com/ubiq/go-ubiq/core/types"
-	"github.com/ubiq/go-ubiq/pow"
+	"github.com/ContractNetLabs/go-ContractNet/core/types"
+	"github.com/ContractNetLabs/go-ContractNet/pow"
 )
 
 // nonceCheckResult contains the result of a nonce verification.

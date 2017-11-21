@@ -26,7 +26,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ubiq/go-ubiq/common"
+	"github.com/ContractNetLabs/go-ContractNet/common"
 	"golang.org/x/tools/imports"
 )
 

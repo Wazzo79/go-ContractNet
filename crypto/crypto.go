@@ -30,11 +30,11 @@ import (
 	"encoding/hex"
 	"errors"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/crypto/ecies"
-	"github.com/ubiq/go-ubiq/crypto/secp256k1"
-	"github.com/ubiq/go-ubiq/crypto/sha3"
-	"github.com/ubiq/go-ubiq/rlp"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/crypto/ecies"
+	"github.com/ContractNetLabs/go-ContractNet/crypto/secp256k1"
+	"github.com/ContractNetLabs/go-ContractNet/crypto/sha3"
+	"github.com/ContractNetLabs/go-ContractNet/rlp"
 	"golang.org/x/crypto/ripemd160"
 )
 

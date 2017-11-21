@@ -19,7 +19,7 @@
 package fetcher
 
 import (
-	"github.com/ubiq/go-ubiq/metrics"
+	"github.com/ContractNetLabs/go-ContractNet/metrics"
 )
 
 var (

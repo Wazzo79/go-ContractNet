@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ubiq/go-ubiq/common"
+	"github.com/ContractNetLabs/go-ContractNet/common"
 )
 
 // Topic represents a cryptographically secure, probabilistic partial

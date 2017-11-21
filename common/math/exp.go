@@ -19,7 +19,7 @@ package math
 import (
 	"math/big"
 
-	"github.com/ubiq/go-ubiq/common"
+	"github.com/ContractNetLabs/go-ContractNet/common"
 )
 
 // wordSize is the size number of bits in a big.Int Word.

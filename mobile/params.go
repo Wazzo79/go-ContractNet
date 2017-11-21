@@ -19,9 +19,9 @@
 package gubiq
 
 import (
-	"github.com/ubiq/go-ubiq/core"
-	"github.com/ubiq/go-ubiq/p2p/discv5"
-	"github.com/ubiq/go-ubiq/params"
+	"github.com/ContractNetLabs/go-ContractNet/core"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/discv5"
+	"github.com/ContractNetLabs/go-ContractNet/params"
 )
 
 // MainnetChainConfig returns the chain configurations for the main Ethereum network.

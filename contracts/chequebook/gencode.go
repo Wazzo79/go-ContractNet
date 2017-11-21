@@ -25,11 +25,11 @@ import (
 	"io/ioutil"
 	"math/big"
 
-	"github.com/ubiq/go-ubiq/accounts/abi/bind"
-	"github.com/ubiq/go-ubiq/accounts/abi/bind/backends"
-	"github.com/ubiq/go-ubiq/contracts/chequebook/contract"
-	"github.com/ubiq/go-ubiq/core"
-	"github.com/ubiq/go-ubiq/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/accounts/abi/bind"
+	"github.com/ContractNetLabs/go-ContractNet/accounts/abi/bind/backends"
+	"github.com/ContractNetLabs/go-ContractNet/contracts/chequebook/contract"
+	"github.com/ContractNetLabs/go-ContractNet/core"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
 )
 
 var (

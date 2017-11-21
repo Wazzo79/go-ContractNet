@@ -23,8 +23,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/ubiq/go-ubiq/accounts"
-	"github.com/ubiq/go-ubiq/accounts/keystore"
+	"github.com/ContractNetLabs/go-ContractNet/accounts"
+	"github.com/ContractNetLabs/go-ContractNet/accounts/keystore"
 )
 
 const (

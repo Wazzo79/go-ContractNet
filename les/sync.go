@@ -19,9 +19,9 @@ package les
 import (
 	"time"
 
-	"github.com/ubiq/go-ubiq/core"
-	"github.com/ubiq/go-ubiq/eth/downloader"
-	"github.com/ubiq/go-ubiq/light"
+	"github.com/ContractNetLabs/go-ContractNet/core"
+	"github.com/ContractNetLabs/go-ContractNet/eth/downloader"
+	"github.com/ContractNetLabs/go-ContractNet/light"
 	"golang.org/x/net/context"
 )
 

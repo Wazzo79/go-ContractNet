@@ -17,7 +17,7 @@
 package api
 
 import (
-	"github.com/ubiq/go-ubiq/swarm/network"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/network"
 )
 
 type Control struct {

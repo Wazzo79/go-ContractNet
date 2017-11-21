@@ -22,13 +22,13 @@ import (
 	"fmt"
 	mathrand "math/rand"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/common/hexutil"
-	"github.com/ubiq/go-ubiq/crypto"
-	"github.com/ubiq/go-ubiq/logger"
-	"github.com/ubiq/go-ubiq/logger/glog"
-	"github.com/ubiq/go-ubiq/rpc"
-	"github.com/ubiq/go-ubiq/whisper/whisperv5"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/common/hexutil"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/logger"
+	"github.com/ContractNetLabs/go-ContractNet/logger/glog"
+	"github.com/ContractNetLabs/go-ContractNet/rpc"
+	"github.com/ContractNetLabs/go-ContractNet/whisper/whisperv5"
 )
 
 var whisperOffLineErr = errors.New("whisper is offline")

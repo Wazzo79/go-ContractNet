@@ -24,7 +24,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/ubiq/go-ubiq/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
 )
 
 // Tests that datadirs can be successfully created, be them manually configured

@@ -21,8 +21,8 @@ package main
 import (
 	"io"
 
-	"github.com/ubiq/go-ubiq/cmd/utils"
-	"github.com/ubiq/go-ubiq/internal/debug"
+	"github.com/ContractNetLabs/go-ContractNet/cmd/utils"
+	"github.com/ContractNetLabs/go-ContractNet/internal/debug"
 	"gopkg.in/urfave/cli.v1"
 )
 

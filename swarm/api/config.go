@@ -24,11 +24,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/crypto"
-	"github.com/ubiq/go-ubiq/swarm/network"
-	"github.com/ubiq/go-ubiq/swarm/services/swap"
-	"github.com/ubiq/go-ubiq/swarm/storage"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/network"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/services/swap"
+	"github.com/ContractNetLabs/go-ContractNet/swarm/storage"
 )
 
 const (

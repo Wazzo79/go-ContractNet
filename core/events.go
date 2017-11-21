@@ -19,8 +19,8 @@ package core
 import (
 	"math/big"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/core/types"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/core/types"
 )
 
 // TxPreEvent is posted when a transaction enters the transaction pool.

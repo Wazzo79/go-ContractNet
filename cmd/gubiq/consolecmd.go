@@ -21,10 +21,10 @@ import (
 	"os/signal"
 	"strings"
 
-	"github.com/ubiq/go-ubiq/cmd/utils"
-	"github.com/ubiq/go-ubiq/console"
-	"github.com/ubiq/go-ubiq/node"
-	"github.com/ubiq/go-ubiq/rpc"
+	"github.com/ContractNetLabs/go-ContractNet/cmd/utils"
+	"github.com/ContractNetLabs/go-ContractNet/console"
+	"github.com/ContractNetLabs/go-ContractNet/node"
+	"github.com/ContractNetLabs/go-ContractNet/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

@@ -19,9 +19,9 @@ package keystore
 import (
 	"math/big"
 
-	ethereum "github.com/ubiq/go-ubiq"
-	"github.com/ubiq/go-ubiq/accounts"
-	"github.com/ubiq/go-ubiq/core/types"
+	ethereum "github.com/ContractNetLabs/go-ContractNet"
+	"github.com/ContractNetLabs/go-ContractNet/accounts"
+	"github.com/ContractNetLabs/go-ContractNet/core/types"
 )
 
 // keystoreWallet implements the accounts.Wallet interface for the original

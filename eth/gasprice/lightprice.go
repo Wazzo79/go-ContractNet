@@ -21,9 +21,9 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/internal/ethapi"
-	"github.com/ubiq/go-ubiq/rpc"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/internal/ethapi"
+	"github.com/ContractNetLabs/go-ContractNet/rpc"
 	"golang.org/x/net/context"
 )
 

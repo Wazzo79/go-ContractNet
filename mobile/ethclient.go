@@ -21,8 +21,8 @@ package gubiq
 import (
 	"math/big"
 
-	"github.com/ubiq/go-ubiq/core/types"
-	"github.com/ubiq/go-ubiq/ethclient"
+	"github.com/ContractNetLabs/go-ContractNet/core/types"
+	"github.com/ContractNetLabs/go-ContractNet/ethclient"
 )
 
 // EthereumClient provides access to the Ethereum APIs.

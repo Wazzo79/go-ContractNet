@@ -22,7 +22,7 @@ package gubiq
 import (
 	"errors"
 
-	"github.com/ubiq/go-ubiq/p2p/discv5"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/discv5"
 )
 
 // Enode represents a host on the network.

@@ -16,7 +16,7 @@
 
 package ethclient
 
-import "github.com/ubiq/go-ubiq"
+import "github.com/ContractNetLabs/go-ContractNet"
 
 // Verify that Client implements the ethereum interfaces.
 var (

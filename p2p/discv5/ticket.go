@@ -25,9 +25,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/common/mclock"
-	"github.com/ubiq/go-ubiq/crypto"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/common/mclock"
+	"github.com/ContractNetLabs/go-ContractNet/crypto"
 )
 
 const (

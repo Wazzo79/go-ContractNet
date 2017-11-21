@@ -22,7 +22,7 @@ import (
 	"math/rand"
 	"reflect"
 
-	"github.com/ubiq/go-ubiq/common/hexutil"
+	"github.com/ContractNetLabs/go-ContractNet/common/hexutil"
 )
 
 const (

@@ -19,8 +19,8 @@ package rpc
 import (
 	"net"
 
-	"github.com/ubiq/go-ubiq/logger"
-	"github.com/ubiq/go-ubiq/logger/glog"
+	"github.com/ContractNetLabs/go-ContractNet/logger"
+	"github.com/ContractNetLabs/go-ContractNet/logger/glog"
 	"golang.org/x/net/context"
 )
 

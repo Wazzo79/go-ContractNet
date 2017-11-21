@@ -24,7 +24,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ubiq/go-ubiq/core/vm"
+	"github.com/ContractNetLabs/go-ContractNet/core/vm"
 )
 
 func main() {

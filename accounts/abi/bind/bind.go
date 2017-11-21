@@ -28,7 +28,7 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/ubiq/go-ubiq/accounts/abi"
+	"github.com/ContractNetLabs/go-ContractNet/accounts/abi"
 	"golang.org/x/tools/imports"
 )
 

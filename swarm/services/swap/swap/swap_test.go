@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common"
+	"github.com/ContractNetLabs/go-ContractNet/common"
 )
 
 type testInPayment struct {

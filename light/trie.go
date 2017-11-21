@@ -17,8 +17,8 @@
 package light
 
 import (
-	"github.com/ubiq/go-ubiq/ethdb"
-	"github.com/ubiq/go-ubiq/trie"
+	"github.com/ContractNetLabs/go-ContractNet/ethdb"
+	"github.com/ContractNetLabs/go-ContractNet/trie"
 	"golang.org/x/net/context"
 )
 

@@ -19,13 +19,13 @@ package eth
 import (
 	"math/big"
 
-	"github.com/ubiq/go-ubiq"
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/common/hexutil"
-	"github.com/ubiq/go-ubiq/core/types"
-	"github.com/ubiq/go-ubiq/internal/ethapi"
-	"github.com/ubiq/go-ubiq/rlp"
-	"github.com/ubiq/go-ubiq/rpc"
+	"github.com/ContractNetLabs/go-ContractNet"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/common/hexutil"
+	"github.com/ContractNetLabs/go-ContractNet/core/types"
+	"github.com/ContractNetLabs/go-ContractNet/internal/ethapi"
+	"github.com/ContractNetLabs/go-ContractNet/rlp"
+	"github.com/ContractNetLabs/go-ContractNet/rpc"
 	"golang.org/x/net/context"
 )
 

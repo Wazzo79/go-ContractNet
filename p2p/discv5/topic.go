@@ -23,7 +23,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common/mclock"
+	"github.com/ContractNetLabs/go-ContractNet/common/mclock"
 )
 
 const (

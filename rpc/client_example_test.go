@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ubiq/go-ubiq/rpc"
+	"github.com/ContractNetLabs/go-ContractNet/rpc"
 	"golang.org/x/net/context"
 )
 

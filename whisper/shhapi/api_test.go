@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ubiq/go-ubiq/common"
-	"github.com/ubiq/go-ubiq/whisper/whisperv5"
+	"github.com/ContractNetLabs/go-ContractNet/common"
+	"github.com/ContractNetLabs/go-ContractNet/whisper/whisperv5"
 )
 
 func TestBasic(t *testing.T) {

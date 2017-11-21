@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ubiq/go-ubiq/node"
-	"github.com/ubiq/go-ubiq/p2p"
-	"github.com/ubiq/go-ubiq/p2p/discover"
-	"github.com/ubiq/go-ubiq/rpc"
+	"github.com/ContractNetLabs/go-ContractNet/node"
+	"github.com/ContractNetLabs/go-ContractNet/p2p"
+	"github.com/ContractNetLabs/go-ContractNet/p2p/discover"
+	"github.com/ContractNetLabs/go-ContractNet/rpc"
 )
 
 // SampleService is a trivial network service that can be attached to a node for

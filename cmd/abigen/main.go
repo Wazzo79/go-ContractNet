@@ -24,8 +24,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ubiq/go-ubiq/accounts/abi/bind"
-	"github.com/ubiq/go-ubiq/common/compiler"
+	"github.com/ContractNetLabs/go-ContractNet/accounts/abi/bind"
+	"github.com/ContractNetLabs/go-ContractNet/common/compiler"
 )
 
 var (
