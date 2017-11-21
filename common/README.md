@@ -1,14 +1,14 @@
 # common
 
 [![Build
-Status](https://travis-ci.org/ubiq/go-ubiq.png?branch=master)](https://travis-ci.org/ubiq/go-ubiq)
+Status](https://travis-ci.org/ContractNet/go-ContractNet.png?branch=master)](https://travis-ci.org/ContractNet/go-ContractNet)
 
 The common package contains the ethereum utility library.
 
 # Installation
 
-As a subdirectory the main go-ubiq repository, you get it with
-`go get github.com/ubiq/go-ubiq`.
+As a subdirectory the main go-ContractNet repository, you get it with
+`go get github.com/ContractNet/go-ContractNet`.
 
 # Usage
 

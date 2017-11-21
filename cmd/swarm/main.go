@@ -52,7 +52,7 @@ const (
 
 var (
 	gitCommit        string // Git SHA1 commit hash of the release (set via linker flags)
-	app              = utils.NewApp(gitCommit, "Ubiq Swarm")
+	app              = utils.NewApp(gitCommit, "ContractNet Swarm")
 	testbetBootNodes = []string{}
 )
 

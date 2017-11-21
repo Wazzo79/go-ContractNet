@@ -10,8 +10,8 @@
   <packaging>aar</packaging>
 
   <name>Android Ethereum Client</name>
-  <description>Android port of the go-ubiq libraries and node</description>
-  <url>https://github.com/ubiq/go-ubiq</url>
+  <description>Android port of the go-ContractNet libraries and node</description>
+  <url>https://github.com/ContractNet/go-ContractNet</url>
   <inceptionYear>2015</inceptionYear>
 
   <licenses>
@@ -48,10 +48,10 @@
 
   <issueManagement>
     <system>GitHub Issues</system>
-    <url>https://github.com/ubiq/go-ubiq/issues/</url>
+    <url>https://github.com/ContractNet/go-ContractNet/issues/</url>
   </issueManagement>
 
   <scm>
-    <url>https://github.com/ubiq/go-ubiq</url>
+    <url>https://github.com/ContractNet/go-ContractNet</url>
   </scm>
 </project>

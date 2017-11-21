@@ -201,10 +201,10 @@ func main() {
 
 	app := cli.NewApp()
 	app.Name = "ethtest"
-	app.Usage = "go-ubiq test interface"
+	app.Usage = "go-ContractNet test interface"
 	app.Action = setupApp
 	app.Version = "0.2.0"
-	app.Author = "go-ubiq team"
+	app.Author = "go-ContractNet team"
 
 	app.Flags = []cli.Flag{
 		TestFlag,

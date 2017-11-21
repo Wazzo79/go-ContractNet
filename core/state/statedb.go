@@ -52,7 +52,7 @@ type revision struct {
 	journalIndex int
 }
 
-// StateDBs within the ubiq protocol are used to store anything
+// StateDBs within the ContractNet protocol are used to store anything
 // within the merkle trie. StateDBs take care of caching and storing
 // nested states. It's the general query interface to retrieve:
 // * Contracts

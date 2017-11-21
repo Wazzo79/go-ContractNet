@@ -29,7 +29,7 @@
 # - sign installer
 CRCCheck on
 
-!define GROUPNAME "Ubiq"
+!define GROUPNAME "ContractNet"
 !define APPNAME "GContractNet"
 !define DESCRIPTION "Official Go implementation of the Ethereum protocol"
 !addplugindir .\

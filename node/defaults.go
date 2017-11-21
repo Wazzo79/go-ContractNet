@@ -42,7 +42,7 @@ func DefaultDataDir() string {
 		} else if runtime.GOOS == "windows" {
 			return filepath.Join(home, "AppData", "Roaming", "ContractNet")
 		} else {
-			return filepath.Join(home, ".ubiq")
+			return filepath.Join(home, ".ContractNet")
 		}
 	}
 	// As we cannot guess a stable location, return empty and handle later

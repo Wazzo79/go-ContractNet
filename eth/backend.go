@@ -202,7 +202,7 @@ func New(ctx *node.ServiceContext, config *Config) (*Ethereum, error) {
 		if err != nil {
 			return nil, err
 		}
-		glog.V(logger.Info).Infoln("WARNING: Wrote default ubiq genesis block")
+		glog.V(logger.Info).Infoln("WARNING: Wrote default ContractNet genesis block")
 	}
 
 	if config.ChainConfig == nil {

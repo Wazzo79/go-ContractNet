@@ -3,9 +3,9 @@ InstallDir "$InstDir"
 OutFile "${OUTPUTFILE}" # set through command line arguments
 
 # Links for "Add/Remove Programs"
-!define HELPURL "https://github.com/ubiq/go-ubiq/issues"
-!define UPDATEURL "https://github.com/ubiq/go-ubiq/releases"
-!define ABOUTURL "https://github.com/ubiq/go-ubiq#ethereum-go"
+!define HELPURL "https://github.com/ContractNet/go-ContractNet/issues"
+!define UPDATEURL "https://github.com/ContractNet/go-ContractNet/releases"
+!define ABOUTURL "https://github.com/ContractNet/go-ContractNet#ethereum-go"
 !define /date NOW "%Y%m%d"
 
 PageEx license
@@ -29,9 +29,9 @@ Section "GContractNet" GETH_IDX
   SimpleFC::AdvRemoveRule "GContractNet UDP discovery (UDP:30388)"
 
   # Firewall - add rules
-  SimpleFC::AdvAddRule "GContractNet incoming peers (TCP:30388)" ""  6 1 1 2147483647 1 "$INSTDIR\gContractNet.exe" "" "" "Ubiq" 30388 "" "" ""
-  SimpleFC::AdvAddRule "GContractNet outgoing peers (TCP:30388)" ""  6 2 1 2147483647 1 "$INSTDIR\gContractNet.exe" "" "" "Ubiq" "" 30388 "" ""
-  SimpleFC::AdvAddRule "GContractNet UDP discovery (UDP:30388)" "" 17 2 1 2147483647 1 "$INSTDIR\gContractNet.exe" "" "" "Ubiq" "" 30388 "" ""
+  SimpleFC::AdvAddRule "GContractNet incoming peers (TCP:30388)" ""  6 1 1 2147483647 1 "$INSTDIR\gContractNet.exe" "" "" "ContractNet" 30388 "" "" ""
+  SimpleFC::AdvAddRule "GContractNet outgoing peers (TCP:30388)" ""  6 2 1 2147483647 1 "$INSTDIR\gContractNet.exe" "" "" "ContractNet" "" 30388 "" ""
+  SimpleFC::AdvAddRule "GContractNet UDP discovery (UDP:30388)" "" 17 2 1 2147483647 1 "$INSTDIR\gContractNet.exe" "" "" "ContractNet" "" 30388 "" ""
 
   # Set default IPC endpoint (https://github.com/ethereum/EIPs/issues/147)
   ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\gContractNet.ipc"

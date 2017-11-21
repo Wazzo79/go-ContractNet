@@ -428,7 +428,7 @@ func makeAccountManager(conf *Config) (*accounts.Manager, string, error) {
 		keydir, err = filepath.Abs(conf.KeyStoreDir)
 	default:
 		// There is no datadir.
-		keydir, err = ioutil.TempDir("", "go-ubiq-keystore")
+		keydir, err = ioutil.TempDir("", "go-ContractNet-keystore")
 		ephemeral = keydir
 	}
 	if err != nil {

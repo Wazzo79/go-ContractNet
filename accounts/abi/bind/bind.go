@@ -17,7 +17,7 @@
 // Package bind generates Ethereum contract Go bindings.
 //
 // Detailed usage document and tutorial available on the go-ethereum Wiki page:
-// https://github.com/ubiq/go-ubiq/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
+// https://github.com/ContractNet/go-ContractNet/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
 package bind
 
 import (

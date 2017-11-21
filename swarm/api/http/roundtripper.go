@@ -26,7 +26,7 @@ import (
 
 /*
 http roundtripper to register for bzz url scheme
-see https://github.com/ubiq/go-ubiq/issues/2040
+see https://github.com/ContractNet/go-ContractNet/issues/2040
 Usage:
 
 import (

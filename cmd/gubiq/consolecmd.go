@@ -38,7 +38,7 @@ var (
 		Description: `
 The GContractNet console is an interactive shell for the JavaScript runtime environment
 which exposes a node admin interface as well as the Ðapp JavaScript API.
-See https://github.com/ubiq/go-ubiq/wiki/Javascipt-Console
+See https://github.com/ContractNet/go-ContractNet/wiki/Javascipt-Console
 `,
 	}
 	attachCommand = cli.Command{
@@ -50,7 +50,7 @@ See https://github.com/ubiq/go-ubiq/wiki/Javascipt-Console
 		Description: `
 The GContractNet console is an interactive shell for the JavaScript runtime environment
 which exposes a node admin interface as well as the Ðapp JavaScript API.
-See https://github.com/ubiq/go-ubiq/wiki/Javascipt-Console.
+See https://github.com/ContractNet/go-ContractNet/wiki/Javascipt-Console.
 This command allows to open a console on a running gContractNet node.
 `,
 	}
@@ -62,7 +62,7 @@ This command allows to open a console on a running gContractNet node.
 		Category:  "CONSOLE COMMANDS",
 		Description: `
 The JavaScript VM exposes a node admin interface as well as the Ðapp
-JavaScript API. See https://github.com/ubiq/go-ubiq/wiki/Javascipt-Console
+JavaScript API. See https://github.com/ContractNet/go-ContractNet/wiki/Javascipt-Console
 `,
 	}
 )

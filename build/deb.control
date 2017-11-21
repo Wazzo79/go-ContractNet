@@ -5,8 +5,8 @@ Maintainer: {{.Author}}
 Build-Depends: debhelper (>= 8.0.0), golang-1.7
 Standards-Version: 3.9.5
 Homepage: https://ethereum.org
-Vcs-Git: git://github.com/ubiq/go-ubiq.git
-Vcs-Browser: https://github.com/ubiq/go-ubiq
+Vcs-Git: git://github.com/ContractNet/go-ContractNet.git
+Vcs-Browser: https://github.com/ContractNet/go-ContractNet
 
 Package: {{.Name}}
 Architecture: any

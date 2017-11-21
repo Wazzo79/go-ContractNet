@@ -53,14 +53,14 @@ var (
 	// Ethereum address of the GContractNet release oracle.
 	relOracle = common.HexToAddress("0xfa7b9770ca4cb04296cac84f37736d4041251cdf")
 	// The app that holds all commands and flags.
-	app = utils.NewApp(gitCommit, "the go-ubiq command line interface")
+	app = utils.NewApp(gitCommit, "the go-ContractNet command line interface")
 )
 
 func init() {
 	// Initialize the CLI app and start GContractNet
 	app.Action = gContractNet
 	app.HideVersion = true // we have a command to print the version
-	app.Copyright = "Copyright 2013-2016 The go-ubiq Authors"
+	app.Copyright = "Copyright 2013-2016 The go-ContractNet Authors"
 	app.Commands = []cli.Command{
 		// See chaincmd.go:
 		initCommand,
@@ -296,7 +296,7 @@ func startNode(ctx *cli.Context, stack *node.Node) {
 	if ctx.GlobalBool(utils.MiningEnabledFlag.Name) {
 		var ethereum *eth.Ethereum
 		if err := stack.Service(&ethereum); err != nil {
-			utils.Fatalf("ubiq service not running: %v", err)
+			utils.Fatalf("ContractNet service not running: %v", err)
 		}
 		if err := ethereum.StartMining(ctx.GlobalInt(utils.MinerThreadsFlag.Name)); err != nil {
 			utils.Fatalf("Failed to start mining: %v", err)
