@@ -1,4 +1,4 @@
-## Ethereum Go
+## ContractNet Go
 
 Official golang implementation of the Ethereum protocol.
 
