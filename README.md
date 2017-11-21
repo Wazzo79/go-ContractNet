@@ -106,7 +106,7 @@ One of the quickest ways to get Ethereum up and running on your machine is by us
 
 ```
 docker run -d --name ContractNet-node -v /Users/alice/ContractNet:/root \
-           -p 8580:8580 -p 30388:30388 \
+           -p 8580:8580 -p 30380:30380 \
            ContractNet/client-go --fast --cache=512
 ```
 

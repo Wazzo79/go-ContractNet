@@ -17,9 +17,9 @@ Section "Uninstall"
   rmDir "$SMPROGRAMS\${APPNAME}"
 
   # Firewall - remove rules if exists
-  SimpleFC::AdvRemoveRule "GContractNet incoming peers (TCP:30388)"
-  SimpleFC::AdvRemoveRule "GContractNet outgoing peers (TCP:30388)"
-  SimpleFC::AdvRemoveRule "GContractNet UDP discovery (UDP:30388)"
+  SimpleFC::AdvRemoveRule "GContractNet incoming peers (TCP:30380)"
+  SimpleFC::AdvRemoveRule "GContractNet outgoing peers (TCP:30380)"
+  SimpleFC::AdvRemoveRule "GContractNet UDP discovery (UDP:30380)"
 
   # Remove IPC endpoint (https://github.com/ethereum/EIPs/issues/147)
   ${un.EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\gContractNet.ipc"

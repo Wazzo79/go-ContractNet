@@ -24,14 +24,14 @@ Section "GContractNet" GETH_IDX
   createShortCut "$SMPROGRAMS\${APPNAME}\Uninstall.lnk" "$INSTDIR\uninstall.exe" "" "" ""
 
   # Firewall - remove rules (if exists)
-  SimpleFC::AdvRemoveRule "GContractNet incoming peers (TCP:30388)"
-  SimpleFC::AdvRemoveRule "GContractNet outgoing peers (TCP:30388)"
-  SimpleFC::AdvRemoveRule "GContractNet UDP discovery (UDP:30388)"
+  SimpleFC::AdvRemoveRule "GContractNet incoming peers (TCP:30380)"
+  SimpleFC::AdvRemoveRule "GContractNet outgoing peers (TCP:30380)"
+  SimpleFC::AdvRemoveRule "GContractNet UDP discovery (UDP:30380)"
 
   # Firewall - add rules
-  SimpleFC::AdvAddRule "GContractNet incoming peers (TCP:30388)" ""  6 1 1 2147483647 1 "$INSTDIR\gContractNet.exe" "" "" "ContractNet" 30388 "" "" ""
-  SimpleFC::AdvAddRule "GContractNet outgoing peers (TCP:30388)" ""  6 2 1 2147483647 1 "$INSTDIR\gContractNet.exe" "" "" "ContractNet" "" 30388 "" ""
-  SimpleFC::AdvAddRule "GContractNet UDP discovery (UDP:30388)" "" 17 2 1 2147483647 1 "$INSTDIR\gContractNet.exe" "" "" "ContractNet" "" 30388 "" ""
+  SimpleFC::AdvAddRule "GContractNet incoming peers (TCP:30380)" ""  6 1 1 2147483647 1 "$INSTDIR\gContractNet.exe" "" "" "ContractNet" 30380 "" "" ""
+  SimpleFC::AdvAddRule "GContractNet outgoing peers (TCP:30380)" ""  6 2 1 2147483647 1 "$INSTDIR\gContractNet.exe" "" "" "ContractNet" "" 30380 "" ""
+  SimpleFC::AdvAddRule "GContractNet UDP discovery (UDP:30380)" "" 17 2 1 2147483647 1 "$INSTDIR\gContractNet.exe" "" "" "ContractNet" "" 30380 "" ""
 
   # Set default IPC endpoint (https://github.com/ethereum/EIPs/issues/147)
   ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\gContractNet.ipc"

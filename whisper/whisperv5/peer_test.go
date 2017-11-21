@@ -47,7 +47,7 @@ var keys []string = []string{
 	"2f83e45cf1baaea779789f755b7da72d8857aeebff19362dd9af31d3c9d14620",
 	"73f04e34ac6532b19c2aae8f8e52f38df1ac8f5cd10369f92325b9b0494b0590",
 	"1e2e07b69e5025537fb73770f483dc8d64f84ae3403775ef61cd36e3faf162c1",
-	"8963d9bbb3911aac6d30388c786756b1c423c4fbbc95d1f96ddbddf39809e43a",
+	"8963d9bbb3911aac6d30380c786756b1c423c4fbbc95d1f96ddbddf39809e43a",
 	"0422da85abc48249270b45d8de38a4cc3c02032ede1fcf0864a51092d58a2f1f",
 	"8ae5c15b0e8c7cade201fdc149831aa9b11ff626a7ffd27188886cc108ad0fa8",
 	"acd8f5a71d4aecfcb9ad00d32aa4bcf2a602939b6a9dd071bab443154184f805",
@@ -112,7 +112,7 @@ func initialize(t *testing.T) {
 
 	var err error
 	ip := net.IPv4(127, 0, 0, 1)
-	port0 := 30388
+	port0 := 30380
 
 	for i := 0; i < NumNodes; i++ {
 		var node TestNode
@@ -128,7 +128,7 @@ func initialize(t *testing.T) {
 			t.Fatalf("failed convert the key: %s.", keys[i])
 		}
 		port := port0 + i
-		addr := fmt.Sprintf(":%d", port) // e.g. ":30388"
+		addr := fmt.Sprintf(":%d", port) // e.g. ":30380"
 		name := common.MakeName("whisper-go", "2.0")
 		var peers []*discover.Node
 		if i > 0 {

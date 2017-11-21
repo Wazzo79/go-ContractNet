@@ -10,6 +10,6 @@ RUN \
   rm -rf /go-ContractNet
 
 EXPOSE 8580
-EXPOSE 30388
+EXPOSE 30380
 
 ENTRYPOINT ["/gContractNet"]

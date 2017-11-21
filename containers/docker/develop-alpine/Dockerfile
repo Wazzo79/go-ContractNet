@@ -9,6 +9,6 @@ RUN \
   rm -rf /go-ContractNet && rm -rf /var/cache/apk/*
 
 EXPOSE 8580
-EXPOSE 30388
+EXPOSE 30380
 
 ENTRYPOINT ["/gContractNet"]
