@@ -106,7 +106,7 @@ One of the quickest ways to get Ethereum up and running on your machine is by us
 
 ```
 docker run -d --name ubiq-node -v /Users/alice/ubiq:/root \
-           -p 8588:8588 -p 30388:30388 \
+           -p 8580:8580 -p 30388:30388 \
            ubiq/client-go --fast --cache=512
 ```
 
@@ -128,12 +128,12 @@ HTTP based JSON-RPC API options:
 
   * `--rpc` Enable the HTTP-RPC server
   * `--rpcaddr` HTTP-RPC server listening interface (default: "localhost")
-  * `--rpcport` HTTP-RPC server listening port (default: 8588)
+  * `--rpcport` HTTP-RPC server listening port (default: 8580)
   * `--rpcapi` API's offered over the HTTP-RPC interface (default: "eth,net,web3")
   * `--rpccorsdomain` Comma separated list of domains from which to accept cross origin requests (browser enforced)
   * `--ws` Enable the WS-RPC server
   * `--wsaddr` WS-RPC server listening interface (default: "localhost")
-  * `--wsport` WS-RPC server listening port (default: 8589)
+  * `--wsport` WS-RPC server listening port (default: 8581)
   * `--wsapi` API's offered over the WS-RPC interface (default: "eth,net,web3")
   * `--wsorigins` Origins from which to accept websockets requests
   * `--ipcdisable` Disable the IPC-RPC server
@@ -148,7 +148,7 @@ on all transports. You can reuse the same connection for multiple requests!
 doing so! Hackers on the internet are actively trying to subvert Ethereum nodes with exposed APIs!
 Further, all browser tabs can access locally running webservers, so malicious webpages could try to
 subvert locally available APIs!**
-
+"github.com/ContractNetLabs/go-ContractNet
 ### Operating a private network
 
 Maintaining your own private network is more involved as a lot of configurations taken for granted in
