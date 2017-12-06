@@ -18,7 +18,7 @@ package core
 
 // defaultGenesisBlock is a gzip compressed dump of the official default Ethereum
 // genesis block.
-const defaultGenesisBlock = "H4sICMerI1oAA2dlbmVzaXMuanNvbgB1zrsOgzAMBdCdr4g8dzAkQaFjt0r9CcdJICovCTbEvzdA1cfA9ZR75MhLJlKAhz7EGq5i2d9H11Ds7y6V5vJtm6Hz0+zJ3dqBnwnxB30cc61PxXxkh/VwqGl6xC7OCUDhHngTtWnj/6ygbKFsLtnoXGFliSsfpDOMJQeNoUCXpqRtS4Cllnr229eFxJOAWI+DsvUF92EHNxABAAA="
+const defaultGenesisBlock = "H4sICB2zJ1oAA2dlbmVzaXMuanNvbgCtUcsKwjAQvPcrSs4e0rwavVVEPPgTmzSxgb6wESql/26foKAg4iwEMjszZDddEA5AZVVqg3Yhwi1+howk2swS7wrTeCjqUcYTEu8pPqzNGq6m9CdosjchP2DNNa2/wgE8LLErf4Hm7ArnZ1q+mlJnrdO33N/ndkQSzI/kcyyDmItUkOGkQsWUccbRZlTO8sK12d9H05UrFTTL1umXWN2Q55UerN10nSjLFGEqolryiOGtAr01lqZSY6Etx5bgdCgxztyFSEEOy58T+vGtYT/l90H/AN0HAK0pAgAA"
 
 // defaultTestnetGenesisBlock is a gzip compressed dump of the official default Ethereum
 // test network genesis block (currently Ropsten).
