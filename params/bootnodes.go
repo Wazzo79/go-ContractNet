@@ -21,6 +21,7 @@ package params
 var MainnetBootnodes = []string{
 	// ContractNet Go Bootnodes
 	"enode://3bbefa071f98e39b34aedc5f7dff8286c4a372cfd0984e536a78c75c5e36055fa1fe36bc145702680b85febe8afcc0abeb9f29f1694e6e0f699dde338038c14e@138.68.227.73:30380",
+	"enode://e121a4fc63a3afa7dd2f74dc74f262c8cb9c972c1b6d10b6d723d4c52636c67f2fabb9af86bdf29e7b42b2b944018b7ccf8508fe1f86f7139a1452761fb8c18b@165.227.57.123:30380",
 
 }
 
