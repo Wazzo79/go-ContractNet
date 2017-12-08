@@ -14,17 +14,15 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
 
-package params
+package params 
 
 // MainnetBootnodes are the enode URLs of the P2P bootstrap nodes running on
 // the main ContractNet network.
 var MainnetBootnodes = []string{
 	// ContractNet Go Bootnodes
-	"enode://e51f1a9e4d92e71d4e4104c12447bbc0433351607e73e860bbf4340d464c798dd1b1054cd733fc7cf5279a486a38275a27f64bedb11ff5eec6d6191384f64aa5@107.191.104.192:30380",
-	"enode://b3a58d00c799f5181ebed01df04cb0bd714cde5b87a2c00d953227c85cf96ef98235ca856646d5419d01c2b8ff688dbce8fd4e6078ac9619502f0eabe93f404c@45.63.95.155:30380",
-	"enode://6c94a1caeef18228bdaecbef0802332566a73398d9f371f486e4ae2e7aa9a88f4e98c549dd60697d3f4ccb1ec65c0ed8e1554b274fee89da99e7358c580cc408@45.63.65.79:30380",
-	"enode://21c70554811047ed6fe2314cfd5500808d07e1ebd34cde073e2c18e66ea90112c9f7e212b2b145ada89625264f2f44bc762b61b6dfc9efacf0a3ed67b59c496f@159.203.0.101:30380",
-	"enode://f293b3a51bc42d48c8c9cb57954b0d4db1cc1b3e1582d1dfb8865bbd386bc874122e04ce47868f1ec386839a2661f3158071b8d603164cb6e7b9fc9901aed4a3@104.168.87.91:30380",
+	"enode://3bbefa071f98e39b34aedc5f7dff8286c4a372cfd0984e536a78c75c5e36055fa1fe36bc145702680b85febe8afcc0abeb9f29f1694e6e0f699dde338038c14e@138.68.227.73:30380",
+	"enode://e121a4fc63a3afa7dd2f74dc74f262c8cb9c972c1b6d10b6d723d4c52636c67f2fabb9af86bdf29e7b42b2b944018b7ccf8508fe1f86f7139a1452761fb8c18b@165.227.57.123:30380",
+
 }
 
 // TestnetBootnodes are the enode URLs of the P2P bootstrap nodes running on the
