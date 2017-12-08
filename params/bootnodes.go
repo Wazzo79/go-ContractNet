@@ -20,7 +20,7 @@ package params
 // the main ContractNet network.
 var MainnetBootnodes = []string{
 	// ContractNet Go Bootnodes
-	"enode://03d826758f4eae87db2b44d91601ee3978e3ef188d1a883c05b697c66e6aadeedd636703b6f5a28fdf3bd732eab1bc3b3d8544a3175c56f5e79f08a8894670d2@165.227.56.124:30380"
+	"enode://03d826758f4eae87db2b44d91601ee3978e3ef188d1a883c05b697c66e6aadeedd636703b6f5a28fdf3bd732eab1bc3b3d8544a3175c56f5e79f08a8894670d2@165.227.56.124:30380",
 
 }
 
