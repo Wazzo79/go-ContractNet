@@ -131,16 +131,16 @@ func AccumulateRewards(statedb *state.StateDB, header *types.Header, uncles []*t
 	reward := new(big.Int).Set(BlockReward)
 
 	if header.Number.Cmp(big.NewInt(358363)) > 0 {
-		reward = big.NewInt(7e+18)
+		reward = big.NewInt(50e+18)
 	}
 	if header.Number.Cmp(big.NewInt(716727)) > 0 {
-		reward = big.NewInt(6e+18)
+		reward = big.NewInt(25e+18)
 	}
 	if header.Number.Cmp(big.NewInt(1075090)) > 0 {
-		reward = big.NewInt(5e+18)
+		reward = big.NewInt(12e+18)
 	}
 	if header.Number.Cmp(big.NewInt(1433454)) > 0 {
-		reward = big.NewInt(4e+18)
+		reward = big.NewInt(6e+18)
 	}
 	if header.Number.Cmp(big.NewInt(1791818)) > 0 {
 		reward = big.NewInt(3e+18)
