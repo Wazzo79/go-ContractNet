@@ -1,6 +1,6 @@
 ## ContractNet Go
 
-Official golang implementation of the Ethereum protocol.
+Official golang implementation of the Contract Network protocol.
 
 [![API Reference](
 https://camo.githubusercontent.com/915b7be44ada53c290eb157634330494ebe3e30a/68747470733a2f2f676f646f632e6f72672f6769746875622e636f6d2f676f6c616e672f6764646f3f7374617475732e737667
@@ -32,9 +32,9 @@ The go-ContractNet project comes with several wrappers/executables found in the 
 
 | Command    | Description |
 |:----------:|-------------|
-| **`gContractNet`** | Our main Ethereum CLI client. It is the entry point into the Ethereum network (main-, test- or private net), capable of running as a full node (default) archive node (retaining all historical state) or a light node (retrieving data live). It can be used by other processes as a gateway into the Ethereum network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `gContractNet --help` and the [CLI Wiki page](https://github.com/ContractNet/go-ContractNet/wiki/Command-Line-Options) for command line options |
+| **`gContractNet`** | Our main ContractNet CLI client. It is the entry point into the Contract network (main-, test- or private net), capable of running as a full node (default) archive node (retaining all historical state) or a light node (retrieving data live). It can be used by other processes as a gateway into the Ethereum network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `gContractNet --help` and the [CLI Wiki page](https://github.com/ContractNet/go-ContractNet/wiki/Command-Line-Options) for command line options |
 | `abigen` | Source code generator to convert Ethereum contract definitions into easy to use, compile-time type-safe Go packages. It operates on plain [Ethereum contract ABIs](https://github.com/ContractNet/wiki/wiki/Ethereum-Contract-ABI) with expanded functionality if the contract bytecode is also available. However it also accepts Solidity source files, making development much more streamlined. Please see our [Native DApps](https://github.com/ContractNet/go-ContractNet/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts) wiki page for details. |
-| `bootnode` | Stripped down version of our Ethereum client implementation that only takes part in the network node discovery protocol, but does not run any of the higher level application protocols. It can be used as a lightweight bootstrap node to aid in finding peers in private networks. |
+| `bootnode` | Stripped down version of our ContractNet client implementation that only takes part in the network node discovery protocol, but does not run any of the higher level application protocols. It can be used as a lightweight bootstrap node to aid in finding peers in private networks. |
 | `disasm` | Bytecode disassembler to convert EVM (Ethereum Virtual Machine) bytecode into more user friendly assembly-like opcodes (e.g. `echo "6001" | disasm`). For details on the individual opcodes, please see pages 22-30 of the [Ethereum Yellow Paper](http://gavwood.com/paper.pdf). |
 | `evm` | Developer utility version of the EVM (Ethereum Virtual Machine) that is capable of running bytecode snippets within a configurable environment and execution mode. Its purpose is to allow insolated, fine-grained debugging of EVM opcodes (e.g. `evm --code 60ff60ff --debug`). |
 | `gContractNetrpctest` | Developer utility tool to support our [ContractNet/rpc-test](https://github.com/ContractNet/rpc-tests) test suite which validates baseline conformity to the [Ethereum JSON RPC](https://github.com/ContractNet/wiki/wiki/JSON-RPC) specs. Please see the [test suite's readme](https://github.com/ContractNet/rpc-tests/blob/master/README.md) for details. |
@@ -48,7 +48,7 @@ Going through all the possible command line flags is out of scope here (please c
 enumerated a few common parameter combos to get you up to speed quickly on how you can run your
 own GContractNet instance.
 
-### Full node on the main Ethereum network
+### Full node on the main Contract network
 
 By far the most common scenario is people wanting to simply interact with the Ethereum network:
 create accounts; transfer funds; deploy and interact with contracts. For this particular use-case
@@ -102,7 +102,7 @@ them.*
 
 #### Docker quick start
 
-One of the quickest ways to get Ethereum up and running on your machine is by using Docker:
+One of the quickest ways to get ContractNet up and running on your machine is by using Docker:
 
 ```
 docker run -d --name ContractNet-node -v /Users/alice/ContractNet:/root \
@@ -114,7 +114,7 @@ This will start gContractNet in fast sync mode with a DB memory allowance of 512
 
 ### Programatically interfacing GContractNet nodes
 
-As a developer, sooner rather than later you'll want to start interacting with GContractNet and the Ethereum
+As a developer, sooner rather than later you'll want to start interacting with GContractNet and the Contract
 network via your own programs and not manually through the console. To aid this, GContractNet has built in
 support for a JSON-RPC based APIs ([standard APIs](https://github.com/ContractNet/wiki/wiki/JSON-RPC) and
 [GContractNet specific APIs](https://github.com/ContractNet/go-ContractNet/wiki/Management-APIs)). These can be
