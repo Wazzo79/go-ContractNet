@@ -20,9 +20,7 @@ package params
 // the main ContractNet network.
 var MainnetBootnodes = []string{
 	// ContractNet Go Bootnodes
-	"enode://4a224594b7ce124395267edc71d6451e5ebba555848387ce9d8272583e2c2ec2aba9596ccad393b5bb9469581cbbef05cdbf23032c381de5c8aef259ccd94cf4@41.185.71.234:30386",
-	"enode://490b0b2369b7e80b17f1c7552d6452fa2bb21d43df074ece5433faa5937f080b4016824fdca4789f600bc3f78141b117fcb53b98468bc4eb3a26e9b7f0c66b1c@41.185.97.96:30386",
-
+	"enode://4cc32a70d2014a18e06267928fd445cdde3d6d862348aaf0ede4618389ddc028cbc93f027e9a009bc4bb9b327192c0c0482b0952e5de4d8ffadf62b00d170670@41.185.97.79:30380",
 }
 
 // TestnetBootnodes are the enode URLs of the P2P bootstrap nodes running on the
