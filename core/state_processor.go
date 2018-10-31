@@ -130,26 +130,29 @@ func ApplyTransaction(config *params.ChainConfig, bc *BlockChain, gp *GasPool, s
 func AccumulateRewards(statedb *state.StateDB, header *types.Header, uncles []*types.Header) {
 	reward := new(big.Int).Set(BlockReward)
 
-	if header.Number.Cmp(big.NewInt(1433454)) > 0 {
-		reward = big.NewInt(8e+18)
-	}
-	if header.Number.Cmp(big.NewInt(2866909)) > 0 {
+	if header.Number.Cmp(big.NewInt(716728)) > 0 {
 		reward = big.NewInt(7e+18)
 	}
-	if header.Number.Cmp(big.NewInt(4300363)) > 0 {
-		reward = big.NewInt(6e+18)
-	}
-	if header.Number.Cmp(big.NewInt(5733818)) > 0 {
+	if header.Number.Cmp(big.NewInt(1075092)) > 0 {
 		reward = big.NewInt(5e+18)
 	}
-	if header.Number.Cmp(big.NewInt(7167272)) > 0 {
+	if header.Number.Cmp(big.NewInt(1433456)) > 0 {
+		reward = big.NewInt(5e+18)
+	}
+	if header.Number.Cmp(big.NewInt(1791820)) > 0 {
 		reward = big.NewInt(4e+18)
 	}
-	if header.Number.Cmp(big.NewInt(8600727)) > 0 {
+	if header.Number.Cmp(big.NewInt(2150184)) > 0 {
 		reward = big.NewInt(3e+18)
 	}
-	if header.Number.Cmp(big.NewInt(15768000)) > 0 {
+	if header.Number.Cmp(big.NewInt(2508548)) > 0 {
+		reward = big.NewInt(2e+18)
+	}
+	if header.Number.Cmp(big.NewInt(2866912)) > 0 {
 		reward = big.NewInt(1e+18)
+	}
+	if header.Number.Cmp(big.NewInt(3583640)) > 0 {
+		reward = big.NewInt(0e+18)
 	}
 
 	r := new(big.Int)
